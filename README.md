@@ -1,6 +1,12 @@
 PaySwarm Payment Processor (p3)
 ===============================
 
+Note
+----
+
+This branch is a port of the original p3 version to support EUR / SEPA bank accounts.
+
+
 PaySwarm is the world's first implementation of a set
 of technologies that make payments a core part of 
 the Web.
