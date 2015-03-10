@@ -56,7 +56,7 @@ To setup an admin user on mongodb:
 
 1. mongo
 2. use admin
-3. db.addUser( { user: "admin", pwd: "password", roles: [ "clusterAdmin", "readWriteAnyDatabase", "userAdminAnyDatabase", "dbAdminAnyDatabase"] } )
+3. db.createUser( { user: "admin", pwd: "password", roles: [ "clusterAdmin", "readWriteAnyDatabase", "userAdminAnyDatabase", "dbAdminAnyDatabase"] } )
 
 To setup the `payswarm.dev` hostname:
 
