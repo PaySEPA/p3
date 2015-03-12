@@ -43,7 +43,7 @@ function factory(
     };
 
     scope.setAmount = function(amount, precision) {
-      // FIXME: assume USD, get currency details from elsewhere
+      // FIXME: assume EUR, get currency details from elsewhere
       if(precision === undefined) {
         precision = 2;
       }
@@ -73,7 +73,7 @@ function factory(
           payeeRateType: 'FlatAmount',
           payeeApplyType: 'ApplyExclusively',
           destination: scope.input.destination.id,
-          currency: 'USD',
+          currency: 'EUR',
           comment: 'Withdrawal'
         }],
         destination: scope.input.destination.id

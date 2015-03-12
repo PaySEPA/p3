@@ -23,7 +23,7 @@ function factory(psAccountService, brAlertService, brIdentityService, config) {
     model.state = psAccountService.state;
     var account = model.account = {
       '@context': config.data.contextUrl,
-      currency: 'USD',
+      currency: 'EUR',
       sysPublic: []
     };
     model.accountVisibility = 'hidden';

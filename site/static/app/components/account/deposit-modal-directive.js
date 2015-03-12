@@ -79,7 +79,7 @@ function factory(
           payeeRateType: 'FlatAmount',
           payeeApplyType: 'ApplyExclusively',
           destination: scope.account.id,
-          currency: 'USD'
+          currency: 'EUR'
         }],
         source: scope.input.source.id
       };

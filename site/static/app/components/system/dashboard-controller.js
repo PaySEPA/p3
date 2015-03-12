@@ -90,7 +90,7 @@ $(document).ready(function() {
   //console.log(cube);
   var metrics = [];
   //metrics.push(cube.metric('sum(cube_request)').alias('Cube Request'));
-  addCurrencyMetrics(metrics, "USD");
+  addCurrencyMetrics(metrics, "EUR");
   //console.log(metrics);
 
   d3.select(div).selectAll(".axis")

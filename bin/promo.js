@@ -21,7 +21,7 @@ var APP_NAME = 'payswarm.apps.PromotionEditor';
   "redeemable": 1,
   "deposit": [{
     "amount": "1.0000000000",
-    "currency": "USD",
+    "currency": "EUR",
     "comment": "The reason for the funds"
   }],
   "title": "The Promotion Title",

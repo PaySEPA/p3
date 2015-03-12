@@ -3,7 +3,7 @@
     br-tooltip="Since we support micro-payments, we track your budget balance very accurately. The exact balance of this budget is {{budget.currency}} {{budget.balance}} / {{budget.amount}}">
     <div class="progress-bar-text-back">
       <span>{{budget.currency}}</span>
-      <span>{{budget.balance | floor | currency:'$'}} / {{budget.amount | floor | currency:'$'}}</span>
+      <span>{{budget.balance | floor | currency:'€'}} / {{budget.amount | floor | currency:'€'}}</span>
     </div>
     <div class="progress-bar" style="width: {{model.barPercentage}}%"
       ng-class="{
@@ -13,13 +13,13 @@
       }">
       <div class="progress-bar-text-front" style="width: {{model.textPercentage}}%">
         <span>{{budget.currency}}</span>
-        <span>{{budget.balance | floor | currency:'$'}} / {{budget.amount | floor | currency:'$'}}</span>
+        <span>{{budget.balance | floor | currency:'€'}} / {{budget.amount | floor | currency:'€'}}</span>
       </div>
     </div>
   </div>
   <!-- Ensures bar is appropriate width -->
   <div class="progress-bar-text-front" style="width: {{model.textPercentage}}%; height: 0px; visibility: hidden;">
     <div style="display: inline-block; height 0px;">{{budget.currency}}</div>
-    <div style="display: inline-block; height 0px;">{{budget.balance | floor | currency:'$'}} / {{budget.amount | floor | currency:'$'}}</div>
+    <div style="display: inline-block; height 0px;">{{budget.balance | floor | currency:'€'}} / {{budget.amount | floor | currency:'€'}}</div>
   </div>
 </div>

@@ -19,7 +19,7 @@
     <div class="progress progress-striped no-margin">
       <div class="progress-bar-text-back">
         <span>{{account.currency}}</span>
-        <span>{{model.remainingCredit | floor | currency:'$'}} / {{model.creditLimit | floor | currency:'$'}}</span>
+        <span>{{model.remainingCredit | floor | currency:'€'}} / {{model.creditLimit | floor | currency:'€'}}</span>
       </div>
       <div class="progress-bar" style="width: {{model.creditBar.width}}%"
         ng-class="{
@@ -30,14 +30,14 @@
         }">
         <div class="progress-bar-text-front" style="width: {{model.creditBar.textWidth}}%">
           <span>{{account.currency}}</span>
-          <span>{{model.remainingCredit | floor | currency:'$'}} / {{account.creditLimit | floor | currency:'$'}}</span>
+          <span>{{model.remainingCredit | floor | currency:'€'}} / {{account.creditLimit | floor | currency:'€'}}</span>
         </div>
       </div>
     </div>
     <!-- Ensures bar is appropriate width -->
     <div class="progress-bar-text-front" style="width: {{model.creditBar.textWidth}}%; height: 0px; display: none; visibility: hidden;">
       <div style="display: inline-block; height 0px;">{{account.currency}}</div>
-      <div style="display: inline-block; height 0px;">{{model.remainingCredit | floor | currency:'$'}} / {{account.creditLimit | floor | currency:'$'}}</div>
+      <div style="display: inline-block; height 0px;">{{model.remainingCredit | floor | currency:'€'}} / {{account.creditLimit | floor | currency:'€'}}</div>
     </div>
     <div ng-show="account.creditPaymentDue"
       br-lazy-compile="account.creditPaymentDue" br-lazy-id="ps-account-balance-details-credit-payment-due">

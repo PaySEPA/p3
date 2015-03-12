@@ -89,8 +89,8 @@ config.loggers.app.filename = path.join(_logdir, 'payswarm-dev-app.log');
 config.loggers.access.filename = path.join(_logdir, 'payswarm-dev-access.log');
 config.loggers.error.filename = path.join(_logdir, 'payswarm-dev-error.log');
 config.loggers.email.silent = true;
-config.loggers.email.to = ['cluster@payswarm.com'];
-config.loggers.email.from = 'cluster@payswarm.com';
+config.loggers.email.to = ['rene.kapusta@gmail.com'];
+config.loggers.email.from = 'rene.kapusta@gmail.com';
 
 // server info
 config.server.port = 19443;
@@ -121,7 +121,7 @@ config.limiter.ipRequestsPerHour = 0;
 config.database.name = 'payswarm_dev';
 config.database.host = 'localhost';
 config.database.port = 27017;
-config.database.username = 'payswarm';
+config.database.username = 'payswarm'; // payswarm / admin
 config.database.password = 'password';
 config.database.adminPrompt = true;
 config.database.local.collection = 'payswarm_dev';

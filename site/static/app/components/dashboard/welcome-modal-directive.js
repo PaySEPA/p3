@@ -40,7 +40,7 @@ function factory(psAccountService, brAlertService, brIdentityService, config) {
           // FIXME: use default values from config
           label: 'Primary Account',
           sysSlug: 'primary',
-          currency: 'USD',
+          currency: 'EUR',
           sysPublic: []
         }
       }).then(function() {

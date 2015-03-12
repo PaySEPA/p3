@@ -22,7 +22,7 @@ function _m(ms) {
 // create base transaction
 function _txn() {
   return {
-    currency: 'USD'
+    currency: 'EUR'
   };
 }
 
@@ -53,7 +53,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeApplyType: 'ApplyExclusively',
       payeeRate: '1'
@@ -72,7 +72,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'INVALID',
       payeeApplyType: 'ApplyExclusively',
@@ -92,7 +92,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
       payeeRate: '1'
@@ -111,7 +111,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeRate: '1'
@@ -130,7 +130,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'INVALID',
@@ -150,7 +150,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:destination1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['a'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -187,7 +187,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:destination1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['a'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -195,7 +195,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:destination2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['b'],
       payeeApplyGroup: ['a'],
       payeeExemptGroup: ['b'],
@@ -243,7 +243,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:destination1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['a'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -251,7 +251,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:destination2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['b'],
       payeeApplyGroup: ['a'],
       payeeExemptGroup: ['b'],
@@ -299,7 +299,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:destination1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['a'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -307,7 +307,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:destination2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['b'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -315,7 +315,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:destination3',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['c'],
       payeeApplyGroup: ['a'],
       payeeRateType: 'FlatAmount',
@@ -374,7 +374,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:destination1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['a'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -382,7 +382,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:destination2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['a', 'exempt'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -390,7 +390,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:destination3',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['c'],
       payeeApplyGroup: ['a'],
       payeeExemptGroup: ['exempt'],
@@ -449,7 +449,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:destination1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['untaxed'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -457,7 +457,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:destination2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['taxed'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -465,7 +465,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:destination3',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d3'],
       payeeApplyGroup: ['taxed'],
       payeeRateType: 'Percentage',
@@ -524,7 +524,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:destination1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['assets'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -532,7 +532,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:tax1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['taxes'],
       // Loop test w/o apply group
       //payeeApplyGroup: ['assets'],
@@ -542,7 +542,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:tax2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['taxes'],
       // Loop test w/o apply group
       //payeeApplyGroup: ['assets'],
@@ -565,7 +565,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:destination1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['assets'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -573,7 +573,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['fees'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -581,7 +581,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['fees'],
       payeeApplyGroup: ['assets'],
       payeeRateType: 'Percentage',
@@ -590,7 +590,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:tax1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['taxes'],
       payeeApplyGroup: ['assets'],
       payeeRateType: 'Percentage',
@@ -599,7 +599,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:tax2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['taxes'],
       payeeApplyGroup: ['assets'],
       payeeRateType: 'Percentage',
@@ -673,7 +673,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1', 'g2'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -681,7 +681,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d2'],
       payeeApplyGroup: ['g1', 'g2'],
       payeeRateType: 'Percentage',
@@ -728,7 +728,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -736,7 +736,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d2'],
       payeeApplyGroup: ['g1', 'g1'],
       payeeRateType: 'Percentage',
@@ -783,7 +783,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:remainder',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -791,7 +791,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d1'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -838,7 +838,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:remainder',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -846,7 +846,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d1'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -855,7 +855,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d2'],
       payeeApplyGroup: ['d1'],
       payeeRateType: 'Percentage',
@@ -913,7 +913,7 @@ describe('payswarm.tools', function() {
       var payees = [{
         type: 'Payee',
         destination: 'urn:remainder',
-        currency: 'USD',
+        currency: 'EUR',
         payeeGroup: ['g1'],
         payeeRateType: 'FlatAmount',
         payeeApplyType: 'ApplyExclusively',
@@ -921,7 +921,7 @@ describe('payswarm.tools', function() {
       }, {
         type: 'Payee',
         destination: 'urn:d1',
-        currency: 'USD',
+        currency: 'EUR',
         payeeGroup: ['d1'],
         payeeApplyGroup: ['g1'],
         payeeRateType: 'Percentage',
@@ -930,7 +930,7 @@ describe('payswarm.tools', function() {
       }, {
         type: 'Payee',
         destination: 'urn:d2',
-        currency: 'USD',
+        currency: 'EUR',
         payeeGroup: ['d2'],
         payeeApplyGroup: ['g1'],
         payeeRateType: 'Percentage',
@@ -988,7 +988,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:remainder',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -996,7 +996,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d1'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1005,7 +1005,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d2'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1014,7 +1014,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d3',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d3'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1082,7 +1082,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:a1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1090,7 +1090,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:a2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1098,7 +1098,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d1'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'FlatAmount',
@@ -1155,7 +1155,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:a1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1163,7 +1163,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:a2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1171,7 +1171,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:a3',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1179,7 +1179,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d1'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'FlatAmount',
@@ -1244,7 +1244,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:a1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1252,7 +1252,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:a2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1260,7 +1260,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:a3',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1268,7 +1268,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d1'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'FlatAmount',
@@ -1333,7 +1333,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:default',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1341,7 +1341,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d1'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1362,7 +1362,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:default',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1370,7 +1370,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['d1'],
       payeeApplyGroup: ['does not exist'],
       payeeRateType: 'Percentage',
@@ -1417,7 +1417,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1425,7 +1425,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1462,7 +1462,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1470,7 +1470,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g2'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1518,7 +1518,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1526,7 +1526,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g2'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1574,7 +1574,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1582,7 +1582,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g2'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1630,7 +1630,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1638,7 +1638,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g2'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1686,7 +1686,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1694,7 +1694,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g2'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1717,7 +1717,7 @@ describe('payswarm.tools', function() {
       var payees = [{
         type: 'Payee',
         destination: 'urn:d1',
-        currency: 'USD',
+        currency: 'EUR',
         payeeGroup: ['g1'],
         payeeRateType: 'FlatAmount',
         payeeApplyType: 'ApplyExclusively',
@@ -1725,7 +1725,7 @@ describe('payswarm.tools', function() {
       }, {
         type: 'Payee',
         destination: 'urn:d2',
-        currency: 'USD',
+        currency: 'EUR',
         payeeGroup: ['g2'],
         payeeApplyGroup: ['g1'],
         payeeRateType: 'Percentage',
@@ -1748,7 +1748,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1756,7 +1756,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g2'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'Percentage',
@@ -1780,7 +1780,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['group-1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1799,7 +1799,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['authority-1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1818,7 +1818,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['payswarm-1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1836,7 +1836,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:d1',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g1'],
       payeeRateType: 'FlatAmount',
       payeeApplyType: 'ApplyExclusively',
@@ -1844,7 +1844,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d2',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g2'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'FlatAmount',
@@ -1853,7 +1853,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:d3',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['g3'],
       payeeApplyGroup: ['g1'],
       payeeRateType: 'FlatAmount',
@@ -1875,7 +1875,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:ext',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['withdrawal', 'authority_gateway'],
       payeeRate: '10',
       payeeRateType: 'FlatAmount',
@@ -1884,7 +1884,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['authority'],
       payeeApplyGroup: ['authority_gateway', 'authority_flat'],
       payeeExemptGroup: [
@@ -1897,7 +1897,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['authority', 'authority_flat'],
       payeeApplyGroup: ['authority_gateway'],
       payeeExemptGroup: [
@@ -1959,7 +1959,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:ext',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['withdrawal', 'authority_gateway'],
       payeeRate: '10',
       payeeRateType: 'FlatAmount',
@@ -1968,7 +1968,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['authority'],
       payeeApplyGroup: ['authority_gateway'],
       payeeApplyAfter: ['authority_flat'],
@@ -1985,7 +1985,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['authority', 'authority_flat'],
       payeeApplyGroup: ['authority_gateway'],
       payeeExemptGroup: [
@@ -2048,7 +2048,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:ext',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['withdrawal', 'authority_gateway'],
       payeeRate: '10',
       payeeRateType: 'FlatAmount',
@@ -2057,7 +2057,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['authority'],
       payeeApplyGroup: ['authority_gateway', 'authority_percent'],
       payeeApplyAfter: ['authority_flat'],
@@ -2075,7 +2075,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['authority', 'authority_flat'],
       payeeApplyGroup: ['authority_gateway'],
       payeeExemptGroup: [
@@ -2138,7 +2138,7 @@ describe('payswarm.tools', function() {
     var payees = [{
       type: 'Payee',
       destination: 'urn:ext',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['withdrawal', 'authority_gateway'],
       payeeRate: '10',
       payeeRateType: 'FlatAmount',
@@ -2147,7 +2147,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['authority'],
       payeeApplyGroup: ['authority_gateway', 'authority_percent'],
       payeeApplyAfter: ['authority_flat'],
@@ -2165,7 +2165,7 @@ describe('payswarm.tools', function() {
     }, {
       type: 'Payee',
       destination: 'urn:fees',
-      currency: 'USD',
+      currency: 'EUR',
       payeeGroup: ['authority', 'authority_flat'],
       payeeApplyGroup: ['authority_gateway'],
       payeeExemptGroup: [

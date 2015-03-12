@@ -6,7 +6,7 @@ var schema = {
   title: 'Currency',
   description: 'A currency code or identifier.',
   type: 'string',
-  enum: ['USD'],
+  enum: ['EUR'],
   errors: {
     invalid: 'Please enter a valid currency.',
     missing: 'Please enter a currency.'

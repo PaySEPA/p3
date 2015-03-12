@@ -111,7 +111,7 @@
     "TriggerReason": "com:TriggerReason",
     "Withdrawal": "com:Withdrawal",
 
-    "USD": "https://w3id.org/currencies/USD",
+    "EUR": "https://w3id.org/currencies/EUR",
 
     "allowBudget": {"@id": "ps:allowBudget", "@type": "xsd:boolean"},
     "asset": {"@id": "ps:asset", "@type": "@id"},

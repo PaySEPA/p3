@@ -2,6 +2,6 @@
   "TRXTYPE": "D",
   "TENDER": "C",
   "AMT": "1.00",
-  "CURRENCY": "USD",
+  "CURRENCY": "EUR",
   "ORIGID": "12345"
 }

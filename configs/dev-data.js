@@ -27,7 +27,7 @@ config.financial.defaults.account = {
   '@context': constants.CONTEXT_URL,
   type: 'FinancialAccount',
   balance: '10.0000000',
-  currency: 'USD',
+  currency: 'EUR',
   sysPublic: [],
   sysStatus: 'active'
 };
@@ -226,7 +226,7 @@ config.financial.accounts.push({
   sysRegulations: 'urn:regulation:unregulated',
   label: config.authority.name + ' Fees Account',
   sysPublic: ['label', 'owner'],
-  currency: 'USD',
+  currency: 'EUR',
   sysAllowStoredValue: true
 });
 config.financial.accounts.push({
@@ -237,7 +237,7 @@ config.financial.accounts.push({
   sysSlug: 'main',
   sysRegulations: 'urn:regulation:unregulated',
   label: config.authority.name + ' Main Account',
-  currency: 'USD',
+  currency: 'EUR',
   sysAllowStoredValue: true
 });
 config.financial.accounts.push({
@@ -248,7 +248,7 @@ config.financial.accounts.push({
   sysSlug: 'verify',
   sysRegulations: 'urn:regulation:unregulated',
   label: config.authority.name + ' Verify Source Account',
-  currency: 'USD',
+  currency: 'EUR',
   sysAllowStoredValue: true
 });
 config.financial.accounts.push({
@@ -258,7 +258,7 @@ config.financial.accounts.push({
   owner: baseIdPath + '/dev',
   sysSlug: 'primary',
   label: 'Primary Account',
-  currency: 'USD'
+  currency: 'EUR'
 });
 config.financial.accounts.push({
   '@context': constants.CONTEXT_URL,
@@ -267,7 +267,7 @@ config.financial.accounts.push({
   owner: baseIdPath + '/customer',
   sysSlug: 'primary',
   label: 'Primary Account',
-  currency: 'USD'
+  currency: 'EUR'
 });
 config.financial.accounts.push({
   '@context': constants.CONTEXT_URL,
@@ -278,7 +278,7 @@ config.financial.accounts.push({
   sysRegulations: 'urn:regulation:unregulated',
   label: 'Primary Account',
   sysPublic: ['label', 'owner'],
-  currency: 'USD'
+  currency: 'EUR'
 });
 
 // fees account
@@ -294,7 +294,7 @@ var defaultPayeeScheme = {
   payee: [{
     type: 'Payee',
     destination: authorityId + '/accounts/main',
-    currency: 'USD',
+    currency: 'EUR',
     payeeGroup: ['authority'],
     payeeRate: '2.00',
     payeeRateType: 'Percentage',
@@ -409,7 +409,7 @@ config.financial.paymentGateway.Test.roundingAdjustmentAccount =
 var merchantBankFixedDepositPayee = {
   type: 'Payee',
   destination: authorityId + '/accounts/fees',
-  currency: 'USD',
+  currency: 'EUR',
   payeeGroup: ['authority', 'authority_flat'],
   payeeApplyGroup: ['authority_gateway'],
   payeeExemptGroup: ['authority_gatewayFlatExempt', 'authority_exempt'],
@@ -421,7 +421,7 @@ var merchantBankFixedDepositPayee = {
 var merchantBankFixedWithdrawalPayee = {
   type: 'Payee',
   destination: authorityId + '/accounts/fees',
-  currency: 'USD',
+  currency: 'EUR',
   payeeGroup: ['authority', 'authority_flat'],
   payeeApplyGroup: ['authority_gateway'],
   payeeExemptGroup: ['authority_gatewayFlatExempt', 'authority_exempt'],
@@ -435,7 +435,7 @@ var merchantBankFixedWithdrawalPayee = {
 config.financial.paymentGateway.Test.payees.deposit.BankAccount = [{
   type: 'Payee',
   destination: authorityId + '/accounts/fees',
-  currency: 'USD',
+  currency: 'EUR',
   payeeGroup: ['authority', 'authority_percentage'],
   payeeApplyGroup: ['authority_gateway', 'authority_flat'],
   payeeExemptGroup: ['authority_gatewayPercentageExempt', 'authority_exempt'],
@@ -447,7 +447,7 @@ config.financial.paymentGateway.Test.payees.deposit.BankAccount = [{
 }, {
   type: 'Payee',
   destination: authorityId + '/accounts/fees',
-  currency: 'USD',
+  currency: 'EUR',
   payeeGroup: ['authority', 'authority_flat'],
   payeeApplyGroup: ['authority_gateway'],
   payeeExemptGroup: ['authority_gatewayFlatExempt', 'authority_exempt'],
@@ -459,7 +459,7 @@ config.financial.paymentGateway.Test.payees.deposit.BankAccount = [{
 config.financial.paymentGateway.Test.payees.withdrawal.BankAccount = [{
   type: 'Payee',
   destination: authorityId + '/accounts/fees',
-  currency: 'USD',
+  currency: 'EUR',
   payeeGroup: ['authority', 'authority_percentage'],
   payeeApplyGroup: ['authority_gateway'],
   payeeApplyAfter: ['authority_flat'],
@@ -472,7 +472,7 @@ config.financial.paymentGateway.Test.payees.withdrawal.BankAccount = [{
 }, {
   type: 'Payee',
   destination: authorityId + '/accounts/fees',
-  currency: 'USD',
+  currency: 'EUR',
   payeeGroup: ['authority', 'authority_flat'],
   payeeApplyGroup: ['authority_gateway'],
   payeeExemptGroup: ['authority_gatewayFlatExempt', 'authority_exempt'],
@@ -486,7 +486,7 @@ config.financial.paymentGateway.Test.payees.withdrawal.BankAccount = [{
 var ccPercentPayee = {
   type: 'Payee',
   destination: authorityId + '/accounts/fees',
-  currency: 'USD',
+  currency: 'EUR',
   payeeGroup: ['authority', 'authority_percentage'],
   payeeApplyGroup: ['authority_gateway', 'authority_flat'],
   payeeExemptGroup: ['authority_gatewayPercentageExempt', 'authority_exempt'],
@@ -499,7 +499,7 @@ var ccPercentPayee = {
 var ccFixedPayee = {
   type: 'Payee',
   destination: authorityId + '/accounts/fees',
-  currency: 'USD',
+  currency: 'EUR',
   payeeGroup: ['authority', 'authority_flat'],
   payeeApplyGroup: ['authority_gateway'],
   payeeExemptGroup: ['authority_gatewayFlatExempt', 'authority_exempt'],
@@ -512,7 +512,7 @@ var ccFixedPayee = {
 var ccAmexPayee = {
   type: 'Payee',
   destination: authorityId + '/accounts/fees',
-  currency: 'USD',
+  currency: 'EUR',
   payeeGroup: ['authority', 'authority_flat'],
   payeeApplyGroup: ['authority_gateway'],
   payeeExemptGroup: ['authority_gatewayFlatExempt', 'authority_exempt'],

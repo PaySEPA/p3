@@ -322,9 +322,9 @@ config.financial.deposit = {};
 config.financial.deposit.expiration = 1000 * 60 * 15;
 // limits
 config.financial.deposit.limits = {};
-config.financial.deposit.limits.USD = {};
-config.financial.deposit.limits.USD.minimum = '0.01';
-config.financial.deposit.limits.USD.maximum = '1000.00';
+config.financial.deposit.limits.EUR = {};
+config.financial.deposit.limits.EUR.minimum = '0.01';
+config.financial.deposit.limits.EUR.maximum = '1000.00';
 
 // withdrawal config
 config.financial.withdrawal = {};
@@ -332,18 +332,18 @@ config.financial.withdrawal = {};
 config.financial.withdrawal.expiration = 1000 * 60 * 15;
 // limits
 config.financial.withdrawal.limits = {};
-config.financial.withdrawal.limits.USD = {};
-config.financial.withdrawal.limits.USD.minimum = '1.00';
-config.financial.withdrawal.limits.USD.maximum = '100.00';
+config.financial.withdrawal.limits.EUR = {};
+config.financial.withdrawal.limits.EUR.minimum = '1.00';
+config.financial.withdrawal.limits.EUR.maximum = '100.00';
 
 // budget config
 config.financial.budget = {};
 // limits
 config.financial.budget.limits = {};
-config.financial.budget.limits.USD = {};
-config.financial.budget.limits.USD.minimum = '0.00';
-config.financial.budget.limits.USD.minimumExclusive = true;
-config.financial.budget.limits.USD.maximum = '1000000.00';
+config.financial.budget.limits.EUR = {};
+config.financial.budget.limits.EUR.minimum = '0.00';
+config.financial.budget.limits.EUR.minimumExclusive = true;
+config.financial.budget.limits.EUR.maximum = '1000000.00';
 
 // cached contract config
 config.financial.cachedContract = {};
@@ -397,9 +397,9 @@ config.financial.paymentToken.maxUnverifiedPerIdentity = 2;
 config.financial.paymentToken.maxVerifyAttempts = 5;
 // number of payment token verify amounts
 config.financial.paymentToken.verifyAmounts = 2;
-// minimum payment token verify amount (USD)
+// minimum payment token verify amount (EUR)
 config.financial.paymentToken.minVerifyAmount = 0.01;
-// maximum payment token verify amount (USD)
+// maximum payment token verify amount (EUR)
 config.financial.paymentToken.maxVerifyAmount = 0.50;
 // expiration times after deletion, in seconds
 config.financial.paymentToken.expiration = {

@@ -39,7 +39,7 @@ function factory(brAlertService, psHostedListingService, config) {
       listing.payee = [{
         type: 'Payee',
         destination: scope.model.destination.id,
-        currency: 'USD',
+        currency: 'EUR',
         payeeGroup: ['vendor'],
         payeeRate: '0.05', //scope.model.total,
         payeeRateType: 'FlatAmount',

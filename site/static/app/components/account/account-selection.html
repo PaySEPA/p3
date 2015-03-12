@@ -36,7 +36,7 @@
   <div ng-show="model.balanceTooLow">
     <hr />
     <div class="alert alert-danger">This account does not have a balance or remaining credit of at least <span
-    class="currency">{{account.currency}}</span> {{minBalance | ceil | currency:'$'}}.</div>
+    class="currency">{{account.currency}}</span> {{minBalance | ceil | currency:'€'}}.</div>
   </div>
   <div ng-show="allowInstantTransfer && model.instantTransferRequired"
     br-lazy-compile="allowInstantTransfer && model.instantTransferRequired" br-lazy-id="ps-account-selection-instant-transfer">

@@ -8,8 +8,8 @@ define([], function() {
 'use strict';
 
 var CURRENCY_INFO = {
-  'USD': {
-    symbol: '$',
+  'EUR': {
+    symbol: '€',
     precision: 2
   },
   'DEFAULT': {
